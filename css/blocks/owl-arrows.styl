@@ -1,15 +1,17 @@
 .owl-arrows
     display flex
-    justify-content space-between
-    &__arrow
+    align-items center
+    color #161717
+    &__prev, &__next
         cursor pointer
-        arrow 1px black 30px 60px 'left'
-        +above(lg)
-            arrow 1px black 35px 70px 'left'
-        &_prev
-            margin-right 20px
-        &_next
-            transform rotate(180deg)
+        padding 15px
         &.disabled
             opacity 0.5
             cursor default
+    &__prev
+        transform rotateY(180deg)
+    &__divider
+        height 30px
+        width 1px
+        background-color currentColor
+                

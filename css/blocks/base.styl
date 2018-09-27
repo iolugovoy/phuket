@@ -19,20 +19,20 @@ body
 	color $baseFontColor
 	min-width 320px
 	position relative
-.body
-	display flex
-	position relative
-	flex-direction column
-	justify-content space-between
-	min-height 100%
-	padding 0px
-	margin 0px
-	&__content
-		flex 1 1 auto
-		position relative
-		z-index 0
-	.footer, .header
-		flex 0 0 auto
+// .body
+// 	display flex
+// 	position relative
+// 	flex-direction column
+// 	justify-content space-between
+// 	min-height 100%
+// 	padding 0px
+// 	margin 0px
+// 	&__content
+// 		flex 1 1 auto
+// 		position relative
+// 		z-index 0
+// 	.footer, .header
+// 		flex 0 0 auto
 .global-overlay
 	position fixed
 	left 0px
@@ -48,28 +48,21 @@ body
 p, ul, ol, table
 	margin 0px
 	padding 0
-	margin-y 1em
 	color $baseFontColor
 	font-weight 300
-	+above(xl)
-		margin-y 1.5em
-ol, ul
-	margin-left 20px
+
 li
 	margin 0
-	margin-y 5px
-	+above(md)
-		margin-y 10px
 
 a
 	text-decoration none
 	display inline
 	color $baseLinkColor
-	border-bottom 1px solid  rgba($baseLinkColor, 0.5)
+	// border-bottom 1px solid  rgba($baseLinkColor, 0.5)
 	&:hover, &:focus
 		color lighten($baseLinkColor, 20%)
 		text-decoration none
-		border-bottom-color transparent
+		// border-bottom-color transparent
 .a
 	aReset()
 	&:hover, &:focus
@@ -77,8 +70,8 @@ a
 
 h1, h2, h3, h4, h5, h6, .title
 	color $baseFontColor
-	line-height 1.28em
-	margin-top 1.5em
+	line-height 1em
+	margin-top 0
 	margin-bottom 0.8em
 	font-weight 400
 h1, .title
@@ -148,3 +141,89 @@ table
 			
 .clearfix
 	clearfix()
+
+
+button
+	background transparent
+	border none
+	
+.rubl
+	font-family $ptr
+	font-weight bold
+
+
+h1, h2, h3
+	font-weight bold
+	font-family 'Gotham Pro'
+	
+h1
+	font-size 80px
+	
+h2 
+	font-size 45px
+	
+h3 
+	font-size 22px
+	
+h4 
+	font-family 'Roboto'
+	font-weight bold
+	font-size 24px
+	
+html 
+	font-zie 14px
+	font-family 'Roboto'
+	
+a
+	color #5D5D5D
+
+ul
+	margin-left 0
+	list-style-type none
+	
+button.btn
+	font-size 13px
+	font-weight bold
+
+
+
+.main
+	max-width 100vw
+	overflow hidden
+	>section, >.footer
+		padding-x 14px
+		+above(sm)
+			padding-x 25px
+		+above(md)
+			padding-x 30px
+		+above(lg)
+			padding-left 8.3%
+	>section 
+		set('margin-bottom', 50px n 70px n 100px)
+
+	
+
+.icon-hotel, .icon-mobile, .icon-wallet
+	fill: url('#baseGradient');
+	
+
+.body
+	width 100%
+	display flex
+	.sidebar
+		height 100vh
+		position fixed
+	.main
+		transition all .2s ease-in-out
+		height 100%
+		background-color #F3F3F3
+		width 100%
+		position relative
+		+above(lg)
+			margin-left 340px
+			flex-grow 1
+		&.min-sidebar
+			margin-left 150px
+			
+body 
+	position relative

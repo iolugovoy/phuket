@@ -1,0 +1,48 @@
+.ideal
+	display flex
+	&__text
+		+above(sm)
+			flex-basis 430px
+		+above(md)
+			flex-basis 470px
+		+above(xl)
+			flex-basis 520px 
+		+above(ml)
+			flex-basis 620px
+	&__pic
+		display none
+		background-image url('../images/vacation.png')
+		background-position bottom right
+		background-size cover
+		background-repeat no-repeat
+		+above(sm)
+			display block
+			margin-y 35px
+			margin-right 20px
+			min-width 30%
+			flex-grow 1
+		+below(md)
+			margin-left -25px
+	&__title
+		set('font-size', 25px 30px 34px n 36px 45px )
+	&__preview
+		set('font-size', 20px n n n n 24px)
+		font-weight bold
+		margin-bottom 35px
+	&__main
+		+above(sm)
+			background-color white
+			padding 45px
+			margin-left -60px
+			width 100%
+		h3
+			font-family 'Roboto', sans-serif
+			set('font-size', 18px 22px)
+			set('margin-bottom', 10px 20px)
+			+above(sm)
+				font-family 'Gotham Pro', sans-serif
+		p
+			font-size 14px
+		p:not(:last-child)			
+			set('margin-bottom', 20px 30px)
+		

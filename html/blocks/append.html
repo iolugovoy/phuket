@@ -1,0 +1,51 @@
+<div class="mobile-menu">
+    <ul class="mobile-menu__list"></ul>
+    <div class="mobile-menu__close"></div>
+</div>
+
+
+
+<div class="mobile-toolbar" id="mobile-toolbar">
+    @@include('../blocks/mobile-toolbar.html')
+</div>
+
+<div class="global-overlay"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/vendor/jquery.3.2.1.min.js"><\/script>')</script>
+<!--script>
+    var WebFontConfig = {
+		fontactive: function('Gotham Pro', 'n4') {
+			console.log('Готэм про загружен');
+		},
+    };
+</script-->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>window.WebFont || document.write('<script src="assets/vendor/webfont.js"><\/script>')</script>
+<!--script>
+	WebFont.load({
+		google: {families: [
+                'Open+Sans:300,300i,400,400i,700,700i:cyrillic',
+            ]},
+        custom: {
+			families: ['Gotham Pro:n4,n7', 'Roboto:n4,n7']
+		},
+	})
+</script-->
+
+
+
+<div style="opacity: 0; transform:translateY(-99999999px)">
+	 <svg xmlns="http://www.w3.org/2000/svg" >
+		<defs>
+			<linearGradient id="baseGradient" x1="18.4167" y1="66.5833" x2="48.1666" y2="66.5833" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#0094FF"/>
+			<stop offset="1" stop-color="#312783"/>
+			</linearGradient>
+						<linearGradient id="smallGradient" x1="0" y1="0" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#0094FF"/>
+			<stop offset="1" stop-color="#312783"/>
+			</linearGradient>
+		</defs>
+	</svg>
+</div>

@@ -1,0 +1,104 @@
+.advantages
+	+at(xs)
+		padding-bottom 30px
+		position relative
+	&__list
+		+above(sm)
+			display flex
+			justify-content space-between
+		+above(xl)
+			justify-content space-around
+	.owl-carousel .owl-stage-outer
+		overflow visible
+	.owl-nav
+		display none
+	&__arrows
+		display none
+		+at(xs)
+			display flex
+			position absolute
+			bottom 0
+			left 30%
+			transform translateX(-50%)
+		.owl-arrows__divider
+			display none
+		.disabled
+			opacity 0
+	&__count
+		display none
+		+at(xs)
+			display block
+			color #8C8C8C
+			position absolute
+			bottom -5px
+			left 35%
+			
+
+.advantage
+	display flex
+	width 100%
+	+above(sm)
+		flex-direction column
+		align-items flex-start
+		width auto	
+	+above(lg)
+		flex-direction row
+	+above(ml)
+		align-items center
+	&__svg
+		flex-shrink 0
+		margin-right 22px
+		height 6.5em
+		full-centered()		
+		+above(sm)
+			margin-bottom 25px
+		+above(md)
+			height 5em
+	&__title
+		margin-top 10px
+		set('font-size', 18px n n 20px n 25px)
+		set('margin-bottom', 21px 30px n 28px 18px )
+		set('width', 118px)
+		+above(sm)
+			margin-top 0
+		+above(md)
+			margin-top 15px
+	&__text
+		set('font-size', 13px n n n n 14px)
+		set('width', auto 185px 225px 180px 225px 240px)
+	.icon.icon-hotel
+		sprite-font-size(82px, $svgicon-hotel_width)
+		+above(sm)
+			sprite-font-size(62px, $svgicon-hotel_width)
+		+above(md)
+			sprite-font-size(78px, $svgicon-hotel_width)
+		+above(lg)
+			sprite-font-size(67px, $svgicon-hotel_width)
+		+above(xl)
+			sprite-font-size(84px, $svgicon-hotel_width)
+	.icon.icon-mobile
+		sprite-font-size(55px, $svgicon-mobile_width)
+		+above(sm)
+			sprite-font-size(38px, $svgicon-mobile_width)
+		+above(md)
+			sprite-font-size(52px, $svgicon-mobile_width)
+		+above(lg)
+			sprite-font-size(42px, $svgicon-mobile_width)
+		+above(xl)
+			sprite-font-size(52px, $svgicon-mobile_width)
+		+above(ml)
+			sprite-font-size(60px, $svgicon-mobile_width)
+	.icon.icon-wallet
+		sprite-font-size(85px, $svgicon-wallet_width)
+		+above(sm)
+			sprite-font-size(57px, $svgicon-wallet_width)
+		+above(md)
+			sprite-font-size(76px, $svgicon-wallet_width)
+		+above(lg)
+			sprite-font-size(64px, $svgicon-wallet_width)
+		+above(xl)
+			sprite-font-size(80px, $svgicon-wallet_width)
+		+above(ml)
+			sprite-font-size(83px, $svgicon-wallet_width)
+
+			

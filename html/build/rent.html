@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+    @@include('../blocks/head.html', {
+        "title": "Аренда жилья на острове Пхукет — PhuketRentMix"
+    })
+    <!--link rel="preload" href="/assets/build/index.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+    <noscript><link rel="stylesheet" href="/assets/build/index.css"></noscript-->
+</head>
+<body>
+    <div class="body">
+        @@include('../blocks/sidebar.html')
+        @@include('../blocks/header-md.html')
+        <div class="main">
+            <section class="review">
+                <div class="review__slider">
+                    <ul class="review__sli-list">
+                        <li class="review__slide">
+                            <div style="background-image: url('/assets/images/rent/1.png')"></div>
+                        </li>
+                        <li class="review__slide">
+                            <div style="background-image: url('/assets/images/rent/2.jpg')"></div>
+                        </li>
+                        <li class="review__slide">
+                            <div style="background-image: url('/assets/images/rent/3.jpg')"></div>
+                        </li>
+                        <li class="review__slide">
+                            <div style="background-image: url('/assets/images/rent/4.jpg')"></div>
+                        </li>
+                        <li class="review__slide">
+                            <div style="background-image: url('/assets/images/rent/1.png')"></div>
+                        </li>
+                        <li class="review__slide">
+                            <div style="background-image: url('/assets/images/rent/4.jpg')"></div>
+                        </li>
+                        <li class="review__slide">
+                            <div style="background-image: url('/assets/images/rent/3.jpg')"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="review__pagination">
+                    <ul class="review__pag-list">
+                        <li class="review__thumb">
+                            <div style="background-image: url('/assets/images/rent/thumb/1.png')"></div>
+                        </li>
+                        <li class="review__thumb">
+                            <div style="background-image: url('/assets/images/rent/thumb/2.png')"></div>
+                        </li>
+                        <li class="review__thumb">
+                            <div style="background-image: url('/assets/images/rent/thumb/3.png')"></div>
+                        </li>
+                        <li class="review__thumb">
+                            <div style="background-image: url('/assets/images/rent/thumb/4.png')"></div>
+                        </li>
+                        <li class="review__thumb">
+                            <div style="background-image: url('/assets/images/rent/thumb/1.png')"></div>
+                        </li>
+                        <li class="review__thumb">
+                            <div style="background-image: url('/assets/images/rent/thumb/4.png')"></div>
+                        </li>
+                        <li class="review__thumb">
+                            <div style="background-image: url('/assets/images/rent/thumb/3.png')"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="review__arrows owl-arrows">
+                    @@include('../blocks/arrows.html')
+                </div>
+                <div class="review__video">
+                    <button class="review__video-btn blue-btn">
+                        <span>Видео</span>
+                        <svg class="icon icon-arrow">
+                            <use xlink:href="/assets/build/sprites/global.svg#icon-arrow"/>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <section class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumb"><a href="/">Аренда</a></li>
+                    <li class="breadcrumb"><a href="/">Бунгало</a></li>
+                </ul>
+            </section>
+            <section class="description">
+                <div class="description__info">
+                    <h1>Красивый комплекс бунгало рядом с пляжами Ката и Карон</h1>
+                    <div class="description__id">ID774</div>
+                    <div class="description__adress">
+                        <svg class="icon icon-map-marker">
+                            <use xlink:href="/assets/build/sprites/global.svg#icon-map-marker"/>
+                        </svg>
+                        <span>Банг Тао, 73/3 Moo 3, Soi Awo Bangtao 2, Awo Bangtao Rd., Cherngthalay, Thalang District, Phuket 83110, Thailand</span>
+
+                    </div>
+                    <div class="descriprion__text">
+                        <p>
+                            Отель Bangtao beach chalet это изумительной красоты сад среди которого расположено несколько уютных бунгало. Во внутреннем саду также находиться общий бассейн с шезлонгами и зонтами. Вокруг царит тишина и атмосфера уединения. За пределами отельного комплекса к вашим услугам все разнообразие различных заведений: сувенирные лавки, магазины, кафе, рестораны, спа- и массажные салоны, ну и безусловно великолепный, белоснежный пляж Бангтао.
+                        </p>
+                        <div class="expand-btn">Подробнее</div>
+                    </div>
+
+                </div>
+
+                <form class="rent-form description__form">
+                    <div class="rent-form__price">
+                        <div class="rent-form__price-wrapper">
+                            <div class="rent-form__price-el" data-time-unit="day"> 5 220 Р</div>
+                            <div class="rent-form__price-el" data-time-unit="month"> 155 220 Р</div>
+                            <div class="rent-form__price-el" data-time-unit="halfyear">20 900 330 Р</div>
+                        </div>
+                        <select name="timeunit" id="timeunit">
+                            <option value="day">
+                                за день
+                            </option>
+                            <option value="month">
+                                за месяц
+                            </option>
+                            <option value="halfyear">
+                                за пол года
+                            </option>
+                        </select>   
+                    </div>
+                    <label class="rent-form__dates">
+                        Даты отпуска
+                        <input type="text">
+                    </label>
+                    <label class="rent-form__guests">
+                        Колличество гостей
+                        <input type="number" min="1" value="1">
+                    </label>
+                    <div class="rent-form__deposite">
+                        <span>Страховой депозит</span>
+                        <strong>30%(150 000 Р)</strong>
+                    </div>
+                    <div class="rent-form__sum">
+                        <span>Итого</span>
+                        <div class="rent-form__sum-value">
+                            507 220 Р
+                        </div>
+                    </div>
+                    <div class="rent-form__deposite-sm">
+                        <span>Депозит за бронирование</span>
+                        <strong>30%(150 000 Р)</strong>
+                    </div>
+                    <button type="submit" class="blue-btn">
+                        <span> Забронировать</span>
+                        <svg class="icon icon-arrow">
+                            <use xlink:href="/assets/build/sprites/global.svg#icon-arrow"/>
+                        </svg>                 
+                    </button>
+                </form>
+            </section>
+            <section class="arrival">
+                <div class="arrival__from">
+                    <div class="arrival__heading">
+                        После
+                        <svg class="icon icon-arrow">
+                            <use xlink:href="/assets/build/sprites/global.svg#icon-arrow"/>
+                        </svg>
+                    </div>
+                    <div class="arrival__time">
+                        16:00
+                    </div>
+                    <div class="arrival__name">
+                        Прибытие
+                    </div>
+                </div>
+                <div class="arrival__to">
+                    <div class="arrival__heading">
+                        До
+                        <svg class="icon icon-arrow">
+                            <use xlink:href="/assets/build/sprites/global.svg#icon-arrow"/>
+                        </svg>
+                    </div>
+                    <div class="arrival__time">
+                        11:00
+                    </div>
+                    <div class="arrival__name">
+                        Выезд
+                    </div>
+                </div>
+            </section>
+            <section class="features">
+                <h2 class="features__title">
+                    Характеристики
+                </h2>
+                <div class="features__body">
+                    <ul class="features__list">
+                        <li class="feature">
+                            <div class="feature__name">Этаж</div>
+                            <div class="feature__value">2/5</div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__name">Площадь</div>
+                            <div class="feature__value">2/5</div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__name">Гостей</div>
+                            <div class="feature__value">2</div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__name">Доп.гостевые места</div>
+                            <div class="feature__value">2</div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__name">Гостинная</div>
+                            <div class="feature__value">2</div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__name">Кровать</div>
+                            <div class="feature__value">2</div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__name">Ванная</div>
+                            <div class="feature__value">2</div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__name">Частный бассейн</div>
+                            <div class="feature__value">Нет</div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__name">Кухня</div>
+                            <div class="feature__value">2</div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__name">Гостинная </div>
+                            <div class="feature__value">2</div>
+                        </li>
+                        <li class="feature">
+                            <div class="feature__name">Общий бассейн</div>
+                            <div class="feature__value">Да</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="comfort">
+                <h2 class="comfort__title">
+                    Удобства
+                </h2>
+                <div class="comfort__body">
+                    <ul class="comfort__list">
+                        <li class="item">
+                            <div class="item__name">Ванные полотенца</div>
+                            <div class="item__value">Да</div>
+                        </li>
+                        <li class="item">
+                            <div class="item__name">Пляжные полотенца</div>
+                            <div class="item__value">Да</div>
+                        </li>
+                        <li class="item">
+                            <div class="item__name">Туалетные принадлежности (мыло, шампунь, гель для душа)</div>
+                            <div class="item__value">Да</div>
+                        </li>
+                        <li class="item">
+                            <div class="item__name">Wi-Fi</div>
+                            <div class="item__value">Да</div>
+                        </li>
+                        <li class="item">
+                            <div class="item__name">Шкаф/комод</div>
+                            <div class="item__value">2</div>
+                        </li>
+                        <li class="item">
+                            <div class="item__name">Телевизор</div>
+                            <div class="item__value">Нет</div>
+                        </li>
+                    </ul>
+                    <button type="button" class="comfort__more-btn blue-btn">
+                        <span>Подробнее</span>
+                        <svg class="icon icon-arrow">
+                            <use xlink:href="/assets/build/sprites/global.svg#icon-arrow"/>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <section class="sleep-place">
+                <h2 class="sleep-place__title">
+                    Спальные места
+                </h2>
+                <ul class="sleep-place__list">
+                    <li class="place">
+                        <div class="place__icon">
+                            <svg></svg>
+                        </div>
+                        <div class="place__heading">Спальня 1</div>
+                        <div class="place__text">1 двуспальная кровать</div>
+                    </li>
+                    <li class="place">
+                        <div class="place__icon">
+                            <svg></svg>
+                        </div>
+                        <div class="place__heading">Спальня 2</div>
+                        <div class="place__text">1 односпальная кровать</div>
+                    </li>
+                    <li class="place">
+                        <div class="place__icon">
+                            <svg></svg>
+                        </div>
+                        <div class="place__heading">Общие зоны</div>
+                        <div class="place__text">1 диван</div>
+                    </li>
+                </ul>
+            </section>
+            <section class="map">
+                <div class="map__description">
+                    <div class="map__top">
+                        Район
+                    </div>
+                    <svg class="icon-down"></svg>
+                    <div class="map__title">
+                        Кату
+                    </div>
+                    <div class="map__article">Центральный район</div>
+                    <div class="map__data">
+                        <div class="data__heading">
+                            Пляжи рядом:
+                        </div>
+                        <div class="data__body">
+                            Най Харн, Януй
+                        </div>
+                    </div>
+                    <div class="map__data">
+                        <div class="data__heading">
+                            Расстояние до пляжа:
+                        </div>
+                        <div class="data__body">
+                            На транспорте
+                        </div>
+                    </div>
+                    <div class="map__hotel">
+                        <div class="hotel__heading">
+                            Отель:
+                        </div>
+                        <div class="hotel__body">
+                            Saturdays Residence
+                        </div>
+                        <div class="hotel__stars">
+                            <div class="star visible">★</div>
+                            <div class="star visible">★</div>
+                            <div class="star visible">★</div>
+                            <div class="star">★</div>
+                            <div class="star">★</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map__body"></div>
+            </section>
+            @@include('../blocks/offers.html', {
+                "title": "Похожие"
+            })
+            @@include("../blocks/footer.html")
+        </div>
+    </div>
+    @@include("../blocks/append.html")
+    <script src="/assets/build/global.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+.first
+	height 100vh
+	min-height 500px
+	background url('../images/first-screen.png')
+	background-repeat no-repeat
+	background-size cover
+	background-position bottom right
+	display flex
+	flex-direction column
+	// set('padding-top', 170px 176px 257px 231px 260px 320px)
+	padding-top 30vh
+	padding-left 100px
+	&__title
+		set('font-size', 29px 38px 50px 55px 70px 80px)
+		margin-top 0
+		set('margin-bottom', 13px 15px 18px 20px 28px)
+	&__text
+		set('font-size', 13px 14px 19px n 22px 24px)
+		font-weight bold
+		set('margin-bottom', 13px 15px 18px 20px 28px)
+		set('width', 180px 245px 335px 350px 430px)
+	&__form
+		position relative
+		button[type="submit"]
+			set('margin-top', 13px 15px 18px 20px 28px)
+		input, select
+			border 1px solid black
+			color black
+			background transparent
+			display inline-block
+			font-weight bold
+			padding 5px 10px
+			height 43px
+			width 230px
+			+at(xs)
+				width 180px
+			+at(xs)
+				background rgba(255, 255, 255, .8)
+		input
+			+at(xs)
+				margin-bottom 10px
+			&::placeholder
+				color black
+				opacity 1
+			&:focus
+				border-color black
+		input::-webkit-input-placeholder, input:-ms-input-placeholder, input::-ms-input-placeholder, input::placeholder
+			color black
+			opacity 1	
+	

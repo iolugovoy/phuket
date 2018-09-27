@@ -1,0 +1,95 @@
+.offers
+	position relative
+	&__title
+		set('font-size', 25px 30px 40px 38px 45px n)
+		max-width 50%
+		+below(sm)
+			max-width 75%
+		+at(xs)
+			max-width 100%
+	&-slider
+		+at(xs)
+			padding-bottom 50px
+		.owl-stage-outer
+			overflow visible
+		&__list
+			+above(sm)
+				margin-left -80px
+			+at(xs)
+				margin-left -40px
+		&__block
+			display flex
+			flex-direction column
+			flex-wrap wrap
+			set('height', auto 385px 460px n 620px 740px)
+			&--even
+				flex-direction column-reverse
+		&__arrows
+			position absolute
+			top 10px
+			right 30px
+			+at(xs)
+				top auto
+				right auto
+				left 0
+				bottom 0
+				
+			
+			
+.offer-item
+	display flex
+	flex-direction column
+	+above(sm)
+		height 50%
+		width 41.66666%
+	+at(xs)
+		max-width 220px
+	&:hover, &focus
+		.offer-item__text
+			color white
+			svg 
+				fill white
+			&:before
+				opacity 1
+	&--big
+		+above(sm) 
+			height 100%
+			width 58.33333333%
+		.offer-item__title
+			set('font-size', 15px n 20px n 25px )
+	&__image
+		flex-grow 1
+		background-size cover
+		background-position center center
+		+at(xs)
+			min-height 230px
+	&__text
+		background $whiteGradient
+		font-weight bold
+		font-family 'Gotham Pro', sans-serif
+		transition $baseTransition
+		set('padding-y',  18px n 14px n 21px 27px)
+		set('padding-x', 11px n 15px n 40px 50px)
+		position relative
+		svg 
+			fill currentColor
+		&:before
+			content ''
+			full-fill()
+			background $baseGradient
+			opacity 0
+			transition opacity .2s ease-in-out
+			z-index 0
+		>*
+			position relative
+			z-index 0
+		
+	&__title
+		set('font-size', 15px 12px 15px n 18px )
+		span
+			margin-right 10px
+		svg 
+			display inline-block
+			
+	&__price
+		set('font-size', 14px 12px 15px n 18px 16px)

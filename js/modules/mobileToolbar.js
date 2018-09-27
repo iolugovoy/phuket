@@ -39,7 +39,7 @@ var mobileToolbar = (function($) {
                 }
                 if (data.delta <= 0) {
                     delta += Math.abs(data.delta);
-                    if (delta > 200) {
+                    if (delta > 50) {
                         mobileToolbar.show();
                     }
                 } else {

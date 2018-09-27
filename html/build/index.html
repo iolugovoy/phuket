@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+    @@include('../blocks/head.html', {
+        "title": "PhuketRentMix - главная страница"
+    })
+    <!--link rel="preload" href="/assets/build/index.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+    <noscript><link rel="stylesheet" href="/assets/build/index.css"></noscript-->
+</head>
+<body>
+    <div class="body">
+        @@include('../blocks/sidebar.html')
+        @@include('../blocks/header-md.html')
+        <div class="main">
+            <section class="first">
+                <h2 class="first__title">
+                    Если вам нужно
+                    <br>
+                    отдохнуть
+                </h2>
+                <div class="first__text">
+                    Подберём для вас жильё на острове Пхукет бесплатно
+                </div>
+                <form action="" class="first__form">
+                    <input type="text" placeholder="Даты отпуска" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" data-position="bottom left" data-min-rent="12">
+                    <select type="text" placeholder="Тип недвижимости">
+
+                        <option disabled selected >Тип недвижимости</option>
+                        <option value="room">Комната</option>
+                        <option value="apartment">Квартира</option>
+                        <option value="house">Дом</option>
+                        <option value="villa">Вилла</option>
+                    </select>
+                    <button class="first__btn blue-btn" type="submit">
+                        <span>подобрать</span>
+                        <svg class="icon icon-arrow">
+                            <use xlink:href="/assets/build/sprites/global.svg#icon-arrow"/>
+                        </svg>
+                    </button>
+                </form>
+            </section>
+            <section class="advantages">
+                <ul class="advantages__list">
+                    <li class="advantage">
+                        <div class="advantage__svg">
+                            <svg class="icon icon-wallet">
+                                <use xlink:href="/assets/build/sprites/global.svg#icon-wallet"/>
+                            </svg>
+                        </div>
+                        <div class="advantage__info">
+                            <h3 class="advantage__title">Можно не&nbsp;опасаться</h3>
+                            <div class="advantage__text">Мы&nbsp;понимаем все ваши опасения. И&nbsp;чтобы вы&nbsp;могли нам доверять&nbsp;&mdash; всё подкрепляем документами. Мы&nbsp;отправим вам свои паспорта и&nbsp;регистрационные документы агентства.</div>
+                        </div>
+                    </li>
+                    <li class="advantage">
+                        <div class="advantage__svg">
+                            <svg class="icon icon-mobile">
+                                <use xlink:href="/assets/build/sprites/global.svg#icon-mobile"/>
+                            </svg>
+                        </div>
+                        <div class="advantage__info">
+                            <h3 class="advantage__title">На связи 24&nbsp;часа</h3>
+                            <div class="advantage__text">Какой&nbsp;бы вопрос у&nbsp;вас ни&nbsp;возник&nbsp;&mdash; мы&nbsp;решим его в&nbsp;любое время суток. От&nbsp;замены полотенца до&nbsp;организации поездки по&nbsp;острову. Телефоны всегда включены, двери всегда открыты.</div>
+                        </div>
+                    </li>
+                    <li class="advantage">
+                        <div class="advantage__svg">
+                            <svg class="icon icon-hotel">
+                                <use xlink:href="/assets/build/sprites/global.svg#icon-hotel"/>
+                            </svg>
+                        </div>
+                        <div class="advantage__info">
+                            <h3 class="advantage__title">Услуги агентства бесплатны</h3>
+                            <div class="advantage__text">В&nbsp;Таиланде действует правило: услуги агентства недвижимости оплачивает её&nbsp;владелец. Никаких дополнительных комиссий для вас. Просто выбирайте и&nbsp;наслаждайтесь отдыхом!</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="advantages__arrows owl-arrows">
+                    @@include('../blocks/arrows.html')
+                </div>
+                <div class="advantages__count">
+                </div>
+            </section>
+            @@include('../blocks/offers.html', {
+                "title": "Уникальное жилье для вашей поездки"
+            })
+            <section class="ideal">
+                <div class="ideal__pic"></div>
+                <div class="ideal__text">
+                    <h2 class="ideal__title">В отпуске всё должно быть прекрасно</h2>
+                    <div class="ideal__preview">И трансфер, и жильё, и предоплата</div>
+                    <div class="ideal__main">
+                        <h3>Трансфер из аэропорта — бесплатно</h3>
+                        <p>Наш водитель встретит вас в аэропорту с табличкой. А по дороге к месту назначения может по вашей просьбе отвезти вас в банк для обмена валюты или в магазин за покупками.</p>
+                        <h3>Личная проверка жилья</h3>
+                        <p>Наш менеджер лично посетит перед заселением выбранное жилье. Вам не придётся ждать, пока подготовят номер. И свои первые часы после перелёта вы проведете в Таиланде с комфортом.</p>
+                        <h3>Предоплата 100%? Исключено!</h3>
+                        <p>Мы не сотрудничаем с арендодателями, которые требуют 100%-ную предоплату на этапе бронирования. А значит, вы вносите оплату только при заселении, убедившись, что вас всё устраивает.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="how">
+                <h2 class="how__title">Как всё устроено</h2>
+                <div class="how__pic"></div>
+                <div class="articles">
+                    <ul class="articles__list">
+                        <li class="article article--odd">
+                            <svg class="icon icon-down-arrow">
+                                <use xlink:href="/assets/build/sprites/global.svg#icon-down-arrow"></use>
+                                
+                            </svg>
+                            <p class="article__text">Вы отправляете нам заявку. В течение 1 часа мы вам перезвоним, чтобы обсудить детали</p>
+                        </li>
+                        <li class="article">
+                            <svg class="icon icon-down-arrow">
+                                <use xlink:href="/assets/build/sprites/global.svg#icon-down-arrow"></use>
+                                
+                            </svg>
+                            <p class="article__text">Проводим предоплату от 20% стоимости аренды и подписываем договор с владельцем недвижимости</p>
+                        </li>
+                        <li class="article article--odd">
+                            <svg class="icon icon-down-arrow">
+                                <use xlink:href="/assets/build/sprites/global.svg#icon-down-arrow"></use>
+                                
+                            </svg>
+                            <p class="article__text">В предвкушении отличного отдыха вы летите на комфортном Боинге через океан</p>
+                        </li>
+                        <li class="article">
+                            <svg class="icon icon-down-arrow">
+                                <use xlink:href="/assets/build/sprites/global.svg#icon-down-arrow"></use>
+                                
+                            </svg>
+                            <p class="article__text">Встречаем вас в аэропорту с табличкой</p>
+                        </li>
+                        <li class="article article--odd">
+                            <svg class="icon icon-down-arrow">
+                                <use xlink:href="/assets/build/sprites/global.svg#icon-down-arrow"></use>
+                                
+                            </svg>
+                            <p class="article__text">На месте вас уже ожидает русскоязычный представитель нашей компании, который проведет заселение</p>
+                        </li>
+                        <li class="article">
+                            <svg class="icon icon-down-arrow">
+                                <use xlink:href="/assets/build/sprites/global.svg#icon-down-arrow"></use>
+                                
+                            </svg>
+                            <p class="article__text">На месте вас уже ожидает русскоязычный представитель нашей компании, который проведет заселение</p>
+                        </li>
+                    </ul>
+                    <div class="articles__arrows owl-arrows">
+                        @@include('../blocks/arrows.html')
+                    </div>
+                </div>
+            </section>
+            @@include("../blocks/footer.html")
+        </div>
+    </div>
+    @@include("../blocks/append.html")
+    <script src="/assets/build/global.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.blue-btn
+    background $baseGradient
+    color white
+    padding 22px 16px
+    text-transform uppercase
+    transition all .1s ease-in-out
+    display flex
+    align-items center
+    cursor pointer
+    font-weight bold
+    .icon    
+        fill white
+        margin-left 15px
+        margin-right 10px
+    &:hover, &:focus
+        box-shadow 8px 8px 10px 0 rgba(46, 43, 134, .45)
+    &:active
+        box-shadow inset 8px 8px 8px 0 rgba(0, 0, 0, .25)
+        background linear-gradient(to right, #4f4f4f, #4f4f4f)

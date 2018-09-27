@@ -13,6 +13,8 @@
 @import './vendor/svg4everybody.min.js';
 @import './vendor/cssrelpreload.js';
 @import './vendor/imask.js';
+@import './vendor/air-datepicker/datepicker.min.js';
+
 
 @import './js/includes/app.js';
 @import './js/includes/catalog.js';
@@ -30,7 +32,16 @@
 @import './js/includes/uploadField.js';
 @import './js/includes/global-overlay.js';
 @import './js/includes/input-mask.js';
+@import './js/includes/sidebar.js';
+@import './js/includes/advantages.js';
+@import './js/includes/how.js';
+@import './js/includes/offer.js';
+@import './js/includes/first.js';
+@import './js/includes/review.js';
+@import './js/includes/rent-form.js';
 
 @import './js/modules/mobileToolbar.js';
 @import './js/modules/mobileNav.js';
+
+
 

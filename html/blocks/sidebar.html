@@ -1,0 +1,65 @@
+<div class="sidebar">
+    <div class="sidebar__inner">
+        <button id="toggleSidebar" type="button">
+            <svg class="icon icon-arrow">
+                <use xlink:href="/assets/build/sprites/global.svg#icon-arrow"/>
+            </svg>
+        </button>
+        <div class="sidebar__logo">
+            <img src="/assets/images/logo.svg" alt="PhuketRentMix">
+        </div>
+        <div class="sidebar__form">
+            <form action="" class="search-form">
+                <input type="text" placeholder="НАЙТИ">
+                <button>
+                    <svg class="icon icon-lens">
+                        <use xlink:href="/assets/build/sprites/global.svg#icon-lens"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+        <nav class="sidebar__menu">
+            <ul>
+                <li><a href="#">Аренда</a></li>
+                <li><a href="#">Продажа</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar__links">
+            <a href="/modal.html" class="sidebar__link ajax-link" data-ajax>
+                <svg class="icon icon-question">
+                    <use xlink:href="/assets/build/sprites/global.svg#icon-question" />
+                </svg>
+                <span>Задать вопрос</span>
+            </a>
+            <a href="" class="sidebar__link ajax-link" data-ajax >
+                <svg class="icon icon-cab">
+                    <use xlink:href="/assets/build/sprites/global.svg#icon-cab" />
+                </svg>
+                <span>Личный кабинет</span>
+            </a>
+        </div>
+        <div class="sidebar__controls">
+            <div class="sidebar__curency">
+                <form action="" class="curency-form">
+                    <select name="curency" id="curency-select">
+                        <option value="rub">₽</option>
+                        <option value="usd">$</option>
+                        <option value="eur">€</option>
+                        <option value="bat">฿</option>
+                    </select>
+                </form>
+            </div>
+            <div class="sidebar__language">
+                <form action="" class="language-form">
+                    <select name="language" id="language-select">
+                        <option value="ru">RU</option>
+                        <option value="eng">ENG</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+.how
+	position relative
+	+at(xs)
+		padding-bottom 60px
+	&__pic
+		display none
+		+above(sm)
+			display block
+			background-image url('../images/howitworks.png')
+			background-size cover
+			position absolute
+			background-repeat no-repeat
+			right 0
+			width 80%
+			set('top', 0 95px 135px n 155px 140px)
+			set('height', 0 410px 540px n 585px 680px)
+	&__title
+		set('font-size', 25px 30px 38px n 45px n)
+		set('margin-bottom', 30px 141px 295px n 320px 370px) 
+	.articles
+		.owl-stage-outer
+			overflow visible
+		+at(xs)
+			margin-left -20px 
+		&__list
+			counter-reset articles-counter
+		&__arrows
+			position absolute
+			top 10px
+			right 30px
+			+at(xs)
+				top auto
+				right auto
+				left 0
+				bottom 0
+	.article
+		margin-top 0
+		display flex
+		flex-direction column
+		set('width', 220px n n n 270px)
+		set('height', 340px 350px n n 400px)
+		background linear-gradient(to bottom, rgba(0,148,255,0.75) 0%,rgba(49,39,131,0.75) 82%,rgba(49,39,131,0.75) 100%)
+		color #DBE0E3
+		set('padding-x', 18px n n n 25px)
+		set('padding-top', 30px n n n 40px)
+		&:before
+			content '0' counter(articles-counter)
+			counter-increment articles-counter
+			margin-bottom 1.5em
+		&__text 
+			color currentColor
+		svg
+			fill currentColor
+		&--odd
+			set('margin-top', 0 75px n n 85px)
+			background black
+			color white
+				

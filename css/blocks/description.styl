@@ -1,0 +1,95 @@
+.description
+    display flex
+    &__info
+        h1
+            set('font-size', 25px 24px 40px 40px 50px 55px)
+    &__adress
+        set('font-size', 16px n n 18px n n)
+        font-weight bold
+        display flex 
+        
+        >svg
+            fill url(#smallGradient)
+            margin-right 20px
+    &__id
+        font-size 24px
+        font-weight bold
+        margin-bottom 30px
+    &__text
+        set('font-size', 16px n n 18px n n)
+    &__form
+        position relative
+        flex-shrink 0
+        set('flex-basis', 290px n 365px n 490px 500px)
+        set('margin-left', 0 40px n n 100px)
+        border 1px solid black
+        set('padding-top', 55px n 70px n 90px )
+        set('padding-x', 35px n 45px n 60px )
+        set('padding-bottom', 25px n 35px n 40px )
+    
+
+
+
+.rent-form
+    line-height 1
+    &__price
+        display flex
+        align-items flex-end 
+        justify-content space-between 
+        margin-bottom 20px
+        &-wrapper
+            height 30px
+            position relative
+            flex-grow 1
+        &-el
+            position absolute
+            left 0
+            right 0
+            bottom 0
+            set('font-size', 30px n 35px n 40px)
+            font-weight bold
+            font-family $Gotham
+            transition $baseTransition
+            transform translateY(0) rotateX(0)
+            opacity 1
+            &.hidden-price
+                opacity 0
+                transform translateY(30px) rotateX(90deg)
+        #timeunit
+            background transparent
+            border none 
+            color #8C8C8C
+            padding 0
+            border-bottom 2px solid currentColor
+            padding-bottom 5px
+            margin-right -20px
+            set('font-size', 12px n 14px n 16px)
+        
+    label
+        width 100%
+        font-size 14px
+        color #000
+        input 
+            width 100%
+            margin-top 10px 
+            margin-bottom 20px
+    &__deposite
+        set('font-size', 14px n n 18px)
+        margin-bottom 20px
+        display flex
+        justify-content space-between
+        strong
+            set('font-size', 14px n n 16px)
+    &__sum
+        display flex
+        justify-content space-between
+        margin-bottom 20px
+        align-items center
+    &__sum-value
+        font-size 1.2em
+        font-weight bold
+    &__deposite-sm
+        font-size .8em
+        display flex
+        justify-content space-between
+        margin-bottom 20px

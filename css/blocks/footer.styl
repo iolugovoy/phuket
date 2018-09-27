@@ -1,0 +1,100 @@
+.footer
+	position relative
+	color #5D5D5D
+	padding-bottom 18px
+	box-sizing content-box
+	+above(sm)
+		padding-bottom 37px
+	+above(md)
+		padding-bottom 30px
+	+above(lg)
+		padding-bottom 47px 
+	+above(xl)
+		padding-bottom 52px
+	+above(ml)
+		padding-bottom 64px
+	a
+		color currentColor
+		transition color .2s ease-in-out
+		&:hover, &:focus
+			color black
+	&__wrapper
+		display flex
+		flex-direction column
+		align-items flex-start
+		justify-content space-between
+		height 200px
+		+above(sm)
+			height auto
+			flex-direction row
+			justify-content space-between
+			align-items center
+	&__social
+		display flex
+		align-items center
+		flex-direction column
+		align-items flex-start
+		+above(lg)
+			flex-direction row
+			align-items center
+		>span
+			display inline-block
+			margin-right 20px
+			margin-bottom 10px
+			+above(lg)
+				margin-bottom 0
+				
+		a
+			display inline-flex
+			transition all .2s ease-in-out
+			border-radius 6px
+			&:hover, &:focus
+				box-shadow 0 3px 5px 0 #5d5d5d
+				transform translateY(-3px)
+		ul 
+			display flex
+			margin 0
+			li 
+				margin 0
+				height 32px
+			li:not(:last-child)
+				margin-right 7px
+	&__line
+		width 100%
+		height 1px
+		background linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 8%, rgba(93,93,93,1) 100%)
+		set('margin-bottom', 33px 22px 30px 42px 36px 44px)
+	&__creator
+		display flex
+		flex-direction column
+		align-items flex-end
+		+above(lg)
+			flex-direction row
+		+below(sm)
+			align-items flex-start
+		a
+			font-weight bold
+			+above(sm)
+				margin-left 10px
+	&__policy
+		+between(sm, md)
+			text-align center
+		a 
+			text-decoration underline
+			&:hover, &focus
+				text-decoration none
+			br
+				+above(md)
+					display none
+				
+			
+ 	
+.icon-vk, .icon-odnoklassniki, .icon-facebook, .icon-twitter
+	fill: #fff
+
+.icon-wrapper
+	background-color #5D5D5D
+	border-radius 5px
+	display inline-block
+	width 32px
+	height 32px

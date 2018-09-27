@@ -1,0 +1,79 @@
+.datepicker--nav-title, .datepicker--day-name, .datepicker--cell-day, .datepicker--cell-month, .datepicker--cell-year
+  font-family 'Gotham Pro', sans-serif
+  text-transform uppercase
+
+.datepicker
+	padding 10px
+	text-align center
+	border-radius 0
+	border none
+	width 200px
+	&:before
+		content ''
+		full-fill()
+		background $baseGradient
+		z-index -2
+	&:after
+		content ''
+		z-index -1
+		background white
+		position absolute
+		top 2px
+		bottom 2px 
+		right 2px 
+		left 2px 
+
+
+.datepicker--nav-action:hover
+	background $baseGradient
+	border-radius 0
+	path
+		stroke white
+		
+.datepicker--cell.-selected-
+	background $baseGradient
+	
+.datepicker--cell.-range-from-	
+	background linear-gradient(to right, rgba(49,39,131,1) 0%,rgba(0,148,255,1) 100%)
+	
+.datepicker--cell.-range-from-, .datepicker--cell.-range-to-
+	color white
+	
+.datepicker--cell.-range-to-
+	background $baseGradient	
+	border none
+	
+.datepicker--min-rent
+	font-family 'Gotham Pro', sans-serif
+	line-height 1
+	width 100%
+	padding 5px
+	text-align center
+	div
+		opacity .5
+		font-size .8em
+		
+.datepicker--pointer
+	border none
+	&:before
+		content ''
+		full-fill()
+		background $baseGradient
+		z-index -6
+	// &:after
+	// 	content ''
+	// 	z-index -1
+	// 	background white
+	// 	position absolute
+	// 	top 2px
+	// 	bottom 0
+	// 	right 2px 
+	// 	left 0 
+	// 	
+		
+.datepicker--apply-btn
+	font-family $Gotham
+	margin-x auto
+	padding 5px 8px
+	border 1px solid black
+	
